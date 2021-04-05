@@ -25,6 +25,7 @@ insult = [
     "enculé",
     "encules",
     "enculés",
+    "enculer",
     "merde",
     "merdes",
     "tg",
