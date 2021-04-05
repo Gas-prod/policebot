@@ -76,4 +76,4 @@ async def on_message(message):
         await message.author.add_roles(role_m)
 
 
-client.run("")
+client.run(environ["TOKEN"])
