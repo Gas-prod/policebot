@@ -26,5 +26,8 @@ insult = [
     "enculés",
     "merde",
     "merdes",
-    "tg"
+    "tg",
+    "baise",
+    "baiser",
+    "baisé"
 ]
