@@ -6,7 +6,7 @@ insult = [
     "connnasse",
     "connnasse",
     "connasses",
-    "connnasses,
+    "connnasses",
     "con",
     "pute",
     "putes",
