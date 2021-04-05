@@ -1,3 +1,5 @@
+import os
+from os import environ
 import discord
 import insult_list
 from datetime import timedelta
