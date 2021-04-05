@@ -1,8 +1,12 @@
 insult = [
     "connard",
+    "connnard",
     "connards",
     "connasse",
+    "connnasse",
+    "connnasse",
     "connasses",
+    "connnasses,
     "con",
     "pute",
     "putes",
