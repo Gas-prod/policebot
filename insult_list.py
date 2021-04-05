@@ -15,6 +15,7 @@ insult = [
     "bite",
     "bites",
     "fdp",
+    "f.d.p",
     "negre",
     "nègre",
     "negres",
