@@ -74,4 +74,4 @@ async def on_message(message):
         await message.author.add_roles(role_m)
 
 
-client.run("ODI3ODUyOTM3MTc3OTg5MTQx.YGhEIA.ici3YOvwfQhmINq_IzXEgYQOr4A")
+client.run("")
