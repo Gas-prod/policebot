@@ -11,7 +11,7 @@ old_msg = []
 spam = []
 
 def contains_word(string, word):
-    return (" " + word + " ") in (" " + string + " ")
+    return (word) in (string)
 
 @client.event
 async def on_ready():
@@ -60,7 +60,7 @@ async def on_message(message):
     toDelete = False
 
     for i in insult_list.insult:
-        if contains_word(message.content.lower(), i):
+        if contains_word( " " + message.content.lower() + " ", " " + i + " ") or contains_word(message.content.lower(), i + ".") or contains_word(message.content.lower(), "\'" + i ):
             toDelete = True
 
     if toDelete == True:
