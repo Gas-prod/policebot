@@ -1,12 +1,8 @@
 insult = [
     "connard",
-    "connnard",
     "connards",
     "connasse",
-    "connnasse",
-    "connnasse",
     "connasses",
-    "connnasses",
     "con",
     "pute",
     "putes",
@@ -19,7 +15,6 @@ insult = [
     "bite",
     "bites",
     "fdp",
-    "f.d.p",
     "negre",
     "nègre",
     "negres",
@@ -29,11 +24,10 @@ insult = [
     "enculé",
     "encules",
     "enculés",
-    "enculer",
     "merde",
     "merdes",
     "tg",
-    "baise",
-    "baiser",
-    "baisé"
+    "emmerde",
+    "emmerder",
+    "emmerdé"
 ]
