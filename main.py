@@ -11,7 +11,7 @@ old_msg = []
 spam = []
 
 def contains_word(string, word):
-    return (" " + word + " ") in (" " + string + " ")
+    return (word) in (string)
 
 @client.event
 async def on_ready():
