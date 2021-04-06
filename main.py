@@ -1,5 +1,3 @@
-import os
-from os import environ
 import discord
 import insult_list
 from datetime import timedelta
@@ -20,8 +18,8 @@ async def on_ready():
 @client.event
 async def on_message(message):
 
-    role_r = discord.utils.get(message.author.guild.roles, name = "RESTREINT")
-    role_m = discord.utils.get(message.author.guild.roles, name = "membre")
+    # role_r = discord.utils.get(message.author.guild.roles, name = "RESTREINT")
+    # role_m = discord.utils.get(message.author.guild.roles, name = "membre")
 
     # ANTI SPAM
 
@@ -36,8 +34,8 @@ async def on_message(message):
     
         if len(spam) >= 4:
 
-            await message.author.add_roles(role_r)
-            await message.author.remove_roles(role_m)
+            # await message.author.add_roles(role_r)
+            # await message.author.remove_roles(role_m)
 
             for i in spam:
                 await i.delete()
@@ -47,10 +45,10 @@ async def on_message(message):
             spam[:] = []
             old_msg[:] = []
 
-            time.sleep(10)
+            # time.sleep(10)
 
-            await message.author.remove_roles(role_r)
-            await message.author.add_roles(role_m)
+            # await message.author.remove_roles(role_r)
+            # await message.author.add_roles(role_m)
 
     if len(old_msg) > 7:
         old_msg[:] = []
@@ -67,13 +65,13 @@ async def on_message(message):
         await message.delete()
         await message.channel.send("Vous devez respecter les règles :\nLes insultes sont bannies sur ce serveur", delete_after=60)
 
-        await message.author.add_roles(role_r)
-        await message.author.remove_roles(role_m)
+        # await message.author.add_roles(role_r)
+        # await message.author.remove_roles(role_m)
 
-        time.sleep(10)
+        # time.sleep(10)
 
-        await message.author.remove_roles(role_r)
-        await message.author.add_roles(role_m)
+        # await message.author.remove_roles(role_r)
+        # await message.author.add_roles(role_m)
 
 
 client.run(environ["TOKEN"])
