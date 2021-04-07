@@ -27,7 +27,6 @@ async def on_message(message):
     # ANTI SPAM
 
     msg_content = unidecode.unidecode(message.content).lower()
-    print(msg_content)
 
     old_msg.append(message)
 
