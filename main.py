@@ -59,8 +59,12 @@ async def on_message(message):
 
     toDelete = False
 
-    for i in insult_list.insult:
-        if contains_word( " " + message.content.lower() + " ", " " + i + " ") or contains_word(message.content.lower(), i + ".") or contains_word(message.content.lower(), "\'" + i ):
+    i = 0
+
+    while i < len(insult_list.insult) and toDelete == False:
+
+        print(i)
+        if contains_word( " " + message.content.lower() + " ", " " + insult_list.insult[i] + " ") or contains_word(message.content.lower(), insult_list.insult[i] + ".") or contains_word(message.content.lower(), "\'" + insult_list.insult[i]):
             toDelete = True
 
     if toDelete == True:
