@@ -39,8 +39,7 @@ async def on_message(message):
     
         if len(spam) >= 4:
 
-            # await message.author.add_roles(role_r)
-            # await message.author.remove_roles(role_m)
+            await message.channel.set_permissions(message.author, send_messages=False)
 
             for i in spam:
                 await i.delete()
@@ -50,10 +49,9 @@ async def on_message(message):
             spam[:] = []
             old_msg[:] = []
 
-            # time.sleep(10)
+            time.sleep(10)
 
-            # await message.author.remove_roles(role_r)
-            # await message.author.add_roles(role_m)
+            await message.channel.set_permissions(message.author, send_messages=True)
 
     if len(old_msg) > 7:
         old_msg[:] = []
@@ -70,13 +68,11 @@ async def on_message(message):
         await message.delete()
         await message.channel.send("Vous devez respecter les règles :\nLes insultes sont bannies sur ce serveur", delete_after=60)
 
-        # await message.author.add_roles(role_r)
-        # await message.author.remove_roles(role_m)
+        await message.channel.set_permissions(message.author, send_messages=False)
 
-        # time.sleep(10)
+        time.sleep(10)
 
-        # await message.author.remove_roles(role_r)
-        # await message.author.add_roles(role_m)
+        await message.channel.set_permissions(message.author, send_messages=True)
 
 
 client.run(environ["TOKEN"])
