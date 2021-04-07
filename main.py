@@ -4,6 +4,7 @@ import discord
 import insult_list
 from datetime import timedelta
 import time
+import unidecode
 
 client = discord.Client()
 
@@ -24,6 +25,9 @@ async def on_message(message):
     # role_m = discord.utils.get(message.author.guild.roles, name = "membre")
 
     # ANTI SPAM
+
+    msg_content = unidecode.unidecode(message.content).lower()
+    print(msg_content)
 
     old_msg.append(message)
 
@@ -59,11 +63,8 @@ async def on_message(message):
 
     toDelete = False
 
-    i = 0
-    a = 0
-
     for i in insult_list.insult:
-        if contains_word( " " + message.content.lower() + " ", " " + i + " ") or contains_word(message.content.lower(), i + ".") or contains_word(message.content.lower(), "\'" + i):
+        if contains_word( " " + msg_content + " ", " " + i + " ") or contains_word(msg_content, i + ".") or contains_word(msg_content, "\'" + i):
             toDelete = True
 
     if toDelete == True:
