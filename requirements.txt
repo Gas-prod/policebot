@@ -1,1 +1,2 @@
 discord.py==1.7.0
+unidecode==1.2.0
