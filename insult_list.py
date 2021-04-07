@@ -25,5 +25,7 @@ insult = [
     "tg",
     "emmerde",
     "emmerder",
-    "chiant"
+    "chiant",
+    "baise",
+    "baiser"
 ]
