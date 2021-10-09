@@ -20,12 +20,22 @@ insult = [
     "pd",
     "encule",
     "encules",
+    "enculee",
+    "enculees",
     "merde",
     "merdes",
     "tg",
     "emmerde",
     "emmerder",
     "chiant",
+    "chiante",
+    "chient",
+    "chiente",
     "baise",
-    "baiser"
+    "baiser",
+    "batard",
+    "batarde",
+    "batards",
+    "gueule",
+    "gueules"
 ]
